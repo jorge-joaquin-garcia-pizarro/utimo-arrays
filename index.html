@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Procesador de Números</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <!-- Formulario para ingresar números -->
+    <form id="form-numeros">
+      <h2>Agregar Números</h2>
+      <input id="numero" type="number" placeholder="Ingresa un número" required />
+      <button type="submit">Agregar Número</button>
+      <div id="mensaje"></div>
+      <ul id="lista-numeros"></ul>
+    </form>
+
+    <!-- Botón para guardar los números -->
+    <button id="guardar-btn" disabled>Guardar archivo</button>
+
+    <!-- Subida de archivo y procesamiento -->
+    <form id="uploadForm" enctype="multipart/form-data">
+      <h2>Subir Archivo</h2>
+      <input id="archivo" type="file" accept=".txt" required />
+      <button type="submit">Subir Archivo</button>
+    </form>
+
+    <!-- Resultado del análisis -->
+    <div id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
